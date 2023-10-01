@@ -1,0 +1,54 @@
+<h2>Ajout d'un produit</h2>
+<form (submit)="ajouterProduit()" >
+  <div >
+    <label for="idProduit">ID du Produit</label>
+    <input type="text"  id="idProduit" name="idProduit">
+  </div>
+  <div >
+    <label for="libelle">Libellé</label>
+    <input type="text" id="libelle" name="libelle">
+  </div>
+  <div >
+    <label for="code">Code</label>
+    <input type="text"  id="code"  name="code">
+  </div>
+  <div >
+    <label for="prixUnitaire">Prix Unitaire</label>
+    <input type="text" id="prixUnitaire" name="prixUnitaire">
+  </div>
+  <div >
+    <label for="tauxTVA">Taux TVA</label>
+    <input type="text"  id="tauxTVA" name="tauxTVA">
+  </div>
+  <button type="submit" >Ajouter</button>
+</form>
+<input type="text" [(ngModel)]="searchText" placeholder="Code du produit">
+<div *ngFor="let produit of filterUsers() ,let i=index" >
+
+        <fieldset   [ngClass]="{
+            'text-blue': produit.prixUnitaire <= 50,
+            'italic-text': produit.prixUnitaire <= 50,
+            'large-font': produit.prixUnitaire <= 50
+          }" >
+    <ul  >{{i+1}} Produit : produit{{produit.idProduit }} <button  [disabled]="produit.tauxTVA === 0.2" (click)="adjustTVA(produit)">Ajuster TVA</button>
+    <li >code :{{produit.code}}</li>
+    <li>libelle :{{produit.libelle}}</li>
+    <li >prixUnitaire :{{produit.prixUnitaire}}</li>
+    <li>tauxTVA :{{produit.tauxTVA}}</li></ul> 
+</fieldset>
+<p *ngIf="produit.tvaModifiee ">TVA modifiée</p>
+
+    </div>
+    <style>
+        .text-blue {
+          color: blue;
+        }
+      
+        .italic-text {
+          font-style: italic;
+        }
+      
+        .large-font {
+          font-size: 20px;
+        }
+      </style>

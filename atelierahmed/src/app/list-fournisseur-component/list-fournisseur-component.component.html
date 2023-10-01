@@ -1,0 +1,10 @@
+<div *ngFor="let fournisseur of list ,let i=index" [hidden]="hide" >
+    <div *ngIf="fournisseur.idFournisseur <= 100" >
+        <fieldset [ngStyle]="{'background-color': (fournisseur.libelle === 'hp') ? 'green' : 'yellow'}" (dblclick)="deletefournisseur(i)" >
+    <p  >fournisseur :{{fournisseur.idFournisseur}}</p>
+    <p [style.font-weight]="getColor(fournisseur.code)? 'bold' : 'normal'">code :{{fournisseur.code}}</p>
+    <p >libelle :{{fournisseur.libelle}}</p>
+</fieldset>
+</div>
+    </div>
+    <button (click)="toggleHide()">Cacher</button>
