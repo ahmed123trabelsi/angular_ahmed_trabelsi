@@ -1,0 +1,8 @@
+<p>invoice-list-component works!</p>
+<div *ngFor="let invoice of listeInvoice ,let i=index" >
+
+   
+<ul  > facture : {{i+1}}   </ul> 
+<a  [routerLink]="['/invoice', invoice.idFacture, invoice.active]">Details</a>
+
+</div>

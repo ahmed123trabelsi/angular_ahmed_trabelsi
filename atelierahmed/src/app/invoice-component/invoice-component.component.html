@@ -1,0 +1,18 @@
+<p>invoice-component works!</p>
+<div *ngFor="let invoice of invoices">
+  <div *ngIf="active && invoice.idFacture === IdFacture">
+    <p>ID de la facture : {{ IdFacture }}</p>
+    <p>Montant de la facture : {{ invoice.montantFacture }}</p>
+    <p>Montant de la remise : {{ invoice.montantRemise }}</p>
+    <p>Date de la facture : {{ invoice.dateFacture }}</p>
+    <!-- Ajoutez d'autres détails de la facture ici -->
+  </div>
+  <div *ngIf="!active">
+    <p>Impossible de visualiser les détails de la facture</p>
+  </div>
+</div>
+
+
+
+  
+
