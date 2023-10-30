@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": 4,
+      "firstName": "RyanNNN",
+      "lastName": "Gossling",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Golden",
+      "email": "Ryan@nicholson.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar4.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "id": 9,
+      "firstName": "Mohamed",
+      "lastName": "Ben Mohamed",
+      "birthDate": "1999-06-30",
+      "email": "mohamed@esprit.tn",
+      "password": "test",
+      "profession": "Software Engineer",
+      "accountCategory": "Customer",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar1.png"
+    },
+    {
+      "id": 99,
+      "firstName": "Mohamed",
+      "lastName": "Ben Mohamed",
+      "birthDate": "1999-06-30",
+      "email": "mohamed@esprit.tn",
+      "password": "test",
+      "profession": "Software Engineer",
+      "accountCategory": "Customer",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar1.png"
+    }
+  ]
+}
