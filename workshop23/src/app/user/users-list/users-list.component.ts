@@ -9,13 +9,13 @@ import { UserServiceService } from 'src/app/serices/user.service';
   templateUrl: './users-list.component.html',
   styleUrls: ['./users-list.component.css']
 })
-export class UsersListComponent implements OnInit {
+export class UsersListComponent  {
 
 
 // La variable permetant de récupérer la valeur de recherche
 filter!:string;
 
-  constructor( private route:Router, private userS: UserServiceService) { }
+  constructor(  private userS: UserServiceService) { }
 
   listUsers:User[] = [];
 

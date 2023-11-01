@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 4,
+      "id": 1,
       "firstName": "RyanNNN",
       "lastName": "Gossling",
       "birthDate": "1999-06-30",
@@ -12,26 +12,46 @@
       "profession": "Software Engineer"
     },
     {
-      "id": 9,
+      "id": 8,
+      "firstName": "Milajj",
+      "lastName": " Kunis",
+      "birthDate": "1999-06-30",
+      "accountCategory": "Admin",
+      "email": "mila@kunis.com",
+      "password": "test",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "profession": "Software Engineer"
+    },
+    {
+      "id": 3,
       "firstName": "Mohamed",
       "lastName": "Ben Mohamed",
       "birthDate": "1999-06-30",
       "email": "mohamed@esprit.tn",
       "password": "test",
       "profession": "Software Engineer",
-      "accountCategory": "Customer",
+      "accountCategory": "Admin",
       "picture": "https://bootdey.com/img/Content/avatar/avatar1.png"
     },
     {
-      "id": 99,
-      "firstName": "Mohamed",
-      "lastName": "Ben Mohamed",
-      "birthDate": "1999-06-30",
-      "email": "mohamed@esprit.tn",
-      "password": "test",
-      "profession": "Software Engineer",
+      "id": 55,
+      "firstName": "fatma",
+      "lastName": "ghourbel",
+      "birthDate": "12/8/1998",
       "accountCategory": "Customer",
-      "picture": "https://bootdey.com/img/Content/avatar/avatar1.png"
+      "email": "fatma.ghourbel@gmail.com",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "profession": "biologiste"
+    },
+    {
+      "id": 2,
+      "firstName": "amira",
+      "lastName": "bouraoui",
+      "birthDate": "12/8/1998",
+      "accountCategory": "Customer",
+      "email": "fatma.ghourbel@gmail.com",
+      "picture": "https://bootdey.com/img/Content/avatar/avatar3.png",
+      "profession": "biologiste"
     }
   ]
 }

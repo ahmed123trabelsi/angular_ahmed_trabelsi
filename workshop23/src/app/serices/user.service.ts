@@ -11,7 +11,7 @@ import { User } from '../model/user';
 export class UserServiceService {
 
 
-usersList: User[]= [];
+
 
 //URL du Backend
 url = "http://localhost:3000/users";

@@ -10,6 +10,7 @@ import { EdituserComponent } from '../edituser/edituser.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserServiceService } from '../serices/user.service';
 import { UsersListComponent } from './users-list/users-list.component';
+import { User } from '../model/user';
 
 @NgModule({
   declarations: [ 

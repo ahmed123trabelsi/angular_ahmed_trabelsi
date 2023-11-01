@@ -13,8 +13,8 @@ describe('InvoiceComponentComponent', () => {
     .compileComponents();
 
     fixture = TestBed.createComponent(InvoiceComponentComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+     component = fixture.componentInstance;
+    fixture.detectChanges(); 
   });
 
   it('should create', () => {

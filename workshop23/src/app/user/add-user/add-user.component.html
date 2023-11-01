@@ -1,2 +1,38 @@
 <h2>Add New User</h2>
-<button type="submit" (click)="add()">Add user</button>
+<form action="" class="form-group" #addForm="ngForm" (ngSubmit)="add(addForm)">
+    <label for="name">name</label>
+    <input type="text" id="name" class="form-control" name="name" minlength="4" ngModel required #name="ngModel" pattern="[a-zA-Z]*">
+    <div *ngIf="name.invalid && name.touched">
+    <small class="text text-danger" *ngIf="name?.errors?.['required'] ">name is required</small>
+    <br>
+    <small class="text text-danger" *ngIf="name?.errors?.['minlength'] ">name at least 3 c</small>
+    <br>
+    <small class="text text-danger" *ngIf="name?.errors?.['pattern'] ">name must be cars</small>
+</div>
+    <br>
+    <label for="lastName">lastName</label>
+    <input type="text" id="lastname" class="form-control" name="lastname" minlength="4"  ngModel  required #lastname="ngModel" >
+    <small class="text text-danger" *ngIf="lastname.invalid && name.touched">erorr</small> 
+    <br>
+    <small class="text text-danger" *ngIf="lastname?.errors?.['required'] && name.touched">name is required</small>
+    <br>
+    <small class="text text-danger" *ngIf="lastname?.errors?.['minlength'] && name.touched">name at least 3 c</small>
+    <br>
+    <label for="email">email</label>
+    <input type="text" id="email" class="form-control" name="email" ngModel  #email="ngModel" pattern="^[a-zA-Z0-9._-]+@gmail.com">
+<br>
+<label for="pwd">pwd</label>
+<input type="password" id="password" class="form-control" name="password" ngModel  #pwd="ngModel" pattern="^[a-zA-Z0-9]{8,}?">
+<br>
+<label for="profession">profession</label>
+<input type="text" id="profession" class="form-control" name="profession" ngModel  #profession="ngModel" >
+<br>
+<label for="birthDate">birthDate</label>
+<input type="text" id="birthDate" class="form-control" name="birthDate" ngModel  #birthDate="ngModel" >
+<br>
+<label for=" accountCategory"> accountCategory</label>
+<input type="text" id=" accountCategory" class="form-control" name="accountCategory" ngModel  #accountCategory="ngModel" >
+<small *ngIf="accountCategory.value != 'Customer' && accountCategory.touched">only Customer is accepted</small>
+<br>
+<button type="submit" [disabled]="addForm.invalid" >Add user</button>
+</form>
