@@ -1,0 +1,28 @@
+<form  class="form-group" [formGroup]="updateForm" (ngSubmit)="updateUser()" >
+  <label for="firstName">name</label>
+  <input type="text" id="firstName" class="form-control" name="firstName"  formControlName="firstName" >
+ 
+  <br>
+  <label for="lastName">lastName</label>
+  <input type="text" id="lastName" class="form-control" name="lastName" formControlName="lastName" >
+ 
+  <br>
+  <label for="email">email</label>
+  <input type="text" id="email" class="form-control" name="email"   formControlName="email" >
+<br>
+<label for="pwd">pwd</label>
+<input type="password" id="password" class="form-control" name="password"   formControlName="password"  >
+<br>
+<label for="profession">profession</label>
+<input type="text" id="profession" class="form-control" name="profession"   formControlName="profession" >
+<br>
+<label for="birthDate">birthDate</label>
+<input type="text" id="birthDate" class="form-control" name="birthDate"    formControlName="birthDate"  >
+<br>
+<label for=" accountCategory"> accountCategory</label>
+<input type="text" id=" accountCategory" class="form-control" name="accountCategory"  formControlName="accountCategory"  >
+
+
+<br>
+<button type="submit" (submit)="updateUser()" >updateUser</button>
+</form>

@@ -10,9 +10,9 @@ import { UserServiceService } from '../serices/user.service';
   templateUrl: './update-user.component.html',
   styleUrls: ['./update-user.component.css']
 })
-export class UpdateUserComponent implements OnInit {
+export class UpdateUserComponent  {
 
-  id!:number;
+/*   id!:number;
   user!:User;
 
   constructor(private userS:UserServiceService, private ActR:ActivatedRoute, private R:Router) { }
@@ -27,5 +27,5 @@ export class UpdateUserComponent implements OnInit {
       alert('User Updated!!');
       this.R.navigate(['users']);
     });
-  }
+  } */
 }
