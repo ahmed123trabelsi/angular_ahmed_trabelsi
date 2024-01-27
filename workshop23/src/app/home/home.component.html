@@ -10,6 +10,11 @@
 
  </div>
 </div>
+<div class="row">
+  <div class="col-md-3" *ngFor="let  c of categories">
+    <app-category-item [categorie]="c" (enveloppe)="showusers($event)"></app-category-item>
+  </div>
+</div>
 <!---end slide--->
 
 <!-- <form #myForm="ngForm" name="myForm" novalidate>

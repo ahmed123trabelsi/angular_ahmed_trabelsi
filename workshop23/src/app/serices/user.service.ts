@@ -11,7 +11,7 @@ import { User } from '../model/user';
 export class UserServiceService {
 
 
-
+categori!:string;
 
 //URL du Backend
 url = "http://localhost:3000/users";
@@ -44,6 +44,8 @@ httpOption={
   updateUser(u:User){
     return this.http.put<User>(this.url+"/"+u.id, u, this.httpOption);
   }
-
+getUsersByCategorie(){
+  return this.http.get<User[]>(this.url+'?accountCategory='+this.categori)
+}
 }
 

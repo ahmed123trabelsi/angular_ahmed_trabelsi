@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CategoryItemComponent } from './category-item/category-item.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     HomeComponent,
     NotFoundComponent,
-    UpdateUserComponent
+    UpdateUserComponent,
+    CategoryItemComponent
    
    
   ],

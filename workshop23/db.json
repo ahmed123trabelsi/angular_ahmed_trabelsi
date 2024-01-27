@@ -1,0 +1,12 @@
+{
+    "register": [
+      {
+        "id": 1,
+        "lastName": "Kunis",
+        "firstName": "MilajjV",
+        "email": "mila@gmail.com",
+      
+        "password": "test5555555555555555555"
+      }
+    ]
+  }

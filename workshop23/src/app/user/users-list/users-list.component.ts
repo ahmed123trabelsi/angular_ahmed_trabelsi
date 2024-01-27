@@ -20,7 +20,11 @@ filter!:string;
   listUsers:User[] = [];
 
   ngOnInit(): void {
-    this.userS.getAllUsers().subscribe(data => this.listUsers=data);
+    if(this.userS.categori){
+    this.userS.getUsersByCategorie().subscribe(data => this.listUsers=data);}
+    else{
+      this.userS.getAllUsers().subscribe(data => this.listUsers=data);
+    }
   }
 
   delete(id:number){

@@ -21,7 +21,7 @@ import { Add2Component } from './add2/add2.component';
 
   ],
 
-    providers:[UserServiceService],
+    providers:[],
   imports: [
     FormsModule,
     CommonModule,

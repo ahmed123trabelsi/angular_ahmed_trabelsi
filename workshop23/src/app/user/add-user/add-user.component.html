@@ -34,5 +34,6 @@
 <input type="text" id=" accountCategory" class="form-control" name="accountCategory" ngModel  #accountCategory="ngModel" >
 <small *ngIf="accountCategory.value != 'Customer' && accountCategory.touched">only Customer is accepted</small>
 <br>
+
 <button type="submit" [disabled]="addForm.invalid" >Add user</button>
 </form>
